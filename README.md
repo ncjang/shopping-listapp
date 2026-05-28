@@ -4,7 +4,7 @@
 
 ## 실행 방법
 
-`shopping-list.html` 을 더블클릭해 기본 브라우저로 열면 됩니다. 별도 설치/빌드 단계 없음.
+`index.html` 을 더블클릭해 기본 브라우저로 열면 됩니다. 별도 설치/빌드 단계 없음.
 
 ## 주요 기능
 
@@ -35,12 +35,15 @@
 | 4a | 다중 체크 | 사과 + 바나나 체크 | ✅ 완료 2개 |
 | 5 | 단일 삭제 | "우유"의 `✕` 클릭 | ✅ 우유만 제거, 총 2개로 갱신 |
 | 6 | 일괄 삭제 + 다이얼로그 | 미체크 "딸기" 추가 → `완료 항목 모두 삭제` 클릭 → confirm 수락 | ✅ 체크된 사과/바나나 제거, 딸기 잔존 |
-| 7 | localStorage 직렬화 | `localStorage.getItem('shopping-list-items')` 검사 | ✅ UUID 형식 ID 저장 확인 |
+| 7 | localStorage 직렬화 | `localStorage.getItem('shopping-items')` 검사 | ✅ UUID 형식 ID 저장 확인 |
 | 7a | 새로고침 복원 | 페이지 reload 후 상태 확인 | ✅ "딸기" 복원 |
+
+테스트 시 캡처: `shopping-final.png`
 
 ## 파일 구성
 
 ```
-shopping-list.html       단일 파일 앱 (HTML + CSS + JS)
+index.html       단일 파일 앱 (HTML + CSS + JS)
+shopping-final.png  Playwright 테스트 종료 시점 스크린샷
 README.md                이 문서
 ```
